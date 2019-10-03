@@ -1,0 +1,17 @@
+language: php
+php:
+  - 7.2
+  - 7.3
+
+install:
+  - composer install
+
+stages:
+  - Code style & static analysis
+  - Test
+
+jobs:
+  include:
+    - stage: Code style & static analysis
+      name: PHP CS Fixer
+      script: composer cs-check

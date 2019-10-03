@@ -2,6 +2,7 @@
 
 Symfony integration for [bandiera](https://github.com/springernature/bandiera)
 
+[![Build status][shield-build]][info-build]
 [![MIT licensed][shield-license]][info-license]
 
 ## Installation
@@ -64,4 +65,6 @@ Bandiera Symfony is licensed under the [MIT License][mit].
 
 [shield-license]: https://img.shields.io/badge/license-MIT-blue.svg
 [info-license]: LICENSE
+[info-build]: https://travis-ci.org/springernature/bandiera-symfony
 [mit]: http://opensource.org/licenses/mit-license.php
+[shield-build]: https://img.shields.io/travis/springernature/bandiera-symfony/master.svg
