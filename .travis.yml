@@ -14,7 +14,7 @@ jobs:
   include:
     - stage: Code style & static analysis
       name: PHP CS Fixer
-      script: composer phpcs
+      script: composer cs-check
     - stage: Test
       name: PHPUnit
       script: composer run-script tests
