@@ -1,0 +1,46 @@
+{
+  "name": "springernature/bandiera-symfony",
+  "type": "symfony-bundle",
+  "description": "Symfony integration for Bandiera (https://github.com/springernature/bandiera)",
+  "keywords": ["feature flags", "symfony", "bandiera"],
+  "homepage": "https://github.com/springernature/bandiera-symfony",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Olivier Lechevalier",
+      "email": "olivier.lechevalier@gmail.com"
+    }
+  ],
+  "config": {
+    "sort-packages": true
+  },
+  "require": {
+    "php": "^7.2",
+    "npg/bandiera-client-php": "^1.0",
+    "symfony/config": "^3.0||^4.0",
+    "symfony/dependency-injection": "^3.0||^4.0",
+    "symfony/http-kernel": "^3.0||^4.0",
+    "symfony/security-core": "^3.0||^4.0",
+    "twig/extensions": "^1.5"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.8",
+    "monolog/monolog": "^1.11||^2.0",
+    "phpunit/phpunit": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "SpringerNature\\Symfony\\Bandiera\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SpringerNature\\Symfony\\Bandiera\\Test\\": "test"
+    }
+  },
+  "scripts": {
+    "cs-check": "vendor/bin/php-cs-fixer fix --ansi --verbose --dry-run",
+    "cs-fix": "vendor/bin/php-cs-fixer fix --ansi --verbose",
+    "tests": "vendor/bin/phpunit"
+  }
+}
